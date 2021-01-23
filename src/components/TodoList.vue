@@ -1,5 +1,5 @@
 <template>
-  <div class="p-2 m:p-4 text-left m:w-1/3 min-w-screen border-1 shadow">
+  <div class="p-2 m:p-4 text-left md:w-1/2 min-w-screen border-1 shadow">
     <app-header title="Your Todos" />
     <add-todo />
     <div v-for="item in allTodos" :key="item.id">
