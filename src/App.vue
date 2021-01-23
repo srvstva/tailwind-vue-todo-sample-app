@@ -3,16 +3,16 @@
     id="app"
     class="bg-gray-50 min-h-screen md:flex md:items-center md:justify-center"
   >
-    <todo-list />
+    <todo-app />
   </div>
 </template>
 
 <script>
-import TodoList from "./components/TodoList.vue";
+import TodoApp from "./components/TodoApp.vue";
 export default {
   name: "App",
   components: {
-    TodoList,
+    TodoApp,
   },
   created() {
     this.$store.dispatch("loadTodos");
