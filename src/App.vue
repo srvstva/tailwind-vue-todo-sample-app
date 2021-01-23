@@ -1,7 +1,7 @@
 <template>
   <div
     id="app"
-    class="bg-gray-50 min-h-screen flex items-center justify-center"
+    class="bg-gray-50 min-h-screen md:flex md:items-center md:justify-center"
   >
     <todo-list />
   </div>

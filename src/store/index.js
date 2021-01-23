@@ -29,8 +29,8 @@ export default new Vuex.Store({
         },
         markComplete: (state, payload) => {
             state.todos.forEach(todo => {
-                if (todo.id == payload) {
-                    todo.done = !todo.done;
+                if (todo.id == payload.id) {
+                    todo.done = payload.done;
                 }
             })
             localStorage.setItem("todos", JSON.stringify(state.todos));

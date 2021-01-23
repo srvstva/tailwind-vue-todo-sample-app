@@ -1,15 +1,16 @@
 <template>
-  <div class="relative mb-8 flex items-center">
+  <div class="mb-8 md:flex items-center">
+    <div class="relative w-full">
     <input
       type="text"
-      class="py-4 px-4 border rounded w-full focus:outline-none focus:ring-1 text-gray-800"
+      class="md:py-4 h-8 md:px-4 py-2 px-4 border rounded w-full focus:outline-none
+      focus:ring-1 text-gray-800 text-sm md:text-base"
       placeholder="Whats on your mind?"
       v-model="todoTitle"
     />
-
     <button
       @click="addTodo(todoTitle)"
-      class="absolute right-0 p-4 border-l inline-block focus:outline-none shadow bg-blue-500 rounded-r-lg"
+      class="p-1 absolute right-0 border-l inline-block focus:outline-none shadow bg-blue-500 rounded-r-lg"
     >
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -26,6 +27,7 @@
         />
       </svg>
     </button>
+    </div>
   </div>
 </template>
 
